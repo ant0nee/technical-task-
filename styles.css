@@ -11,6 +11,12 @@
 
 	}
 
+	h2 {
+
+		font-size: 2vw;
+
+	}
+
 	nav {
 
 		margin: auto;
@@ -69,7 +75,7 @@
 	.general {
 
 		float: left;
-		width: 75%; 
+		width: 74%; 
 		margin: 0 auto;
 
 	}
@@ -84,32 +90,30 @@
 	.book .thumbnail {
 
 		float: left;
-		height: 200px;
 		padding-right: 10px;
 
 
 	}
 
 	.book .thumbnail-image {
-		width: 140px;
-		padding-top: 10px;
+		width: 12vw;
 	}
 
 	.general .book {
 
-		width: 271px;
-		height: 210px;
-		margin: 0px 15px 10px 0px;
-		padding: 5px;
+		width: 45%;
+		height: 20vw;
+		margin: 0px 1% 10px 0px;
+		padding: 1%;
 
 	}
 
 	.featured .book {
 
-		width: 170px;
-		height: 370px;
-		padding: 10px 6px 6px 6px;
-		margin: 7px;
+		width: 80%;
+		height: 40vw;
+		padding: 10px 5px 0px 5px;
+		margin: 0px 5% 4px 4%;
 
 
 	}
@@ -117,7 +121,7 @@
 	.featured .thumbnail-image {
 
 		position: absolute;
-		padding-top: 170px;
+		padding-top: 20vw;
 		padding-left: 14px;
 
 
@@ -125,7 +129,7 @@
 
 	.title {
 
-		font-size: 9pt;
+		font-size: 1.5vw;
 
 	}
 
@@ -137,19 +141,25 @@
 
 	.description, .authors, .pageCount {
 
-		font-size: 8pt;
+		font-size: 1.2vw;
 
 	}
 
 	footer {
 
 		position: absolute;
-		width: 160px;
 		top:10px;
 		left: 50%;
-		padding-left: 190px;
+		padding-left: 17vw;
 
 	}
+
+	footer img {
+
+		width: 4vw;
+
+	}
+
 
 
 }
@@ -157,9 +167,21 @@
 /* mobile */
 @media only screen and (max-width: 500px) {
 
+	h2 {
+
+		font-size: 30px;
+
+	}
 	footer {
 
 		text-align: center;
+
+	}
+
+	footer img {
+
+		width: 50px;
+		height: 50px;
 
 	}
 
@@ -281,7 +303,6 @@ h2 {
 
 	text-align: center;
 	font-weight: bold;
-	font-size: 20pt;
 	margin: 15px;
 
 }

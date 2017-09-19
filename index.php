@@ -79,9 +79,9 @@
 		</section>
 	</article>
 	<footer>
-		<a href="javascript:;"><img src="images/twitter_icon.png" alt="twitter" width="50" height="50" /></a>
-		<a href="javascript:;"><img src="images/facebook_icon.png" alt="facebook" width="50" height="50" /></a>
-		<a href="javascript:;"><img src="images/instagram_icon.png" alt="instagram" width="50" height="50" /></a>
+		<a href="javascript:;"><img src="images/twitter_icon.png" alt="twitter" /></a>
+		<a href="javascript:;"><img src="images/facebook_icon.png" alt="facebook" /></a>
+		<a href="javascript:;"><img src="images/instagram_icon.png" alt="instagram" /></a>
 	</footer>
 </body>
 </html>
