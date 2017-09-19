@@ -20,8 +20,6 @@ function loaded() {
 
 	}
 
-	resize(); 
-
 }
 
 function toggleMenu() {
@@ -30,20 +28,6 @@ function toggleMenu() {
 		document.getElementById("navigation").className="show";
 	} else {
 		document.getElementById("navigation").className="";
-	}
-
-}
-
-function resize() {
-
-	if (window.outerWidth < 500) {
-
-		document.body.className = "mobile";
-
-	} else {
-
-		document.body.className = "desktop";
-
 	}
 
 }

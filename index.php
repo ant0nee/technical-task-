@@ -48,14 +48,14 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="scripts.js"></script>
 </head>
-<body class="mobile" onresize="resize()" onload="loaded()">
+<body>
 	<article>
-		<header><img width="100px" height="100px" id="logo" /> <h1>The Book Store</h1></header>
+		<header><img id="logo" /> <h1>The Book Store</h1></header>
 		<nav>
 			<a href="javascript:;" onClick="toggleMenu()" title="menu">
 				<img id="menuIcon" alt="logo" src="images/menu.svg" width="50" height="50" />
 			</a>
-			<ul id="navigation" class="show">
+			<ul id="navigation">
 				<li><a href="javascript:;">Home</a></li><!--
 				--><li><a href="javascript:;">Books</a></li><!--
 				--><li><a href="javascript:;">Magazines</a></li><!--

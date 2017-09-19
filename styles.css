@@ -1,3 +1,269 @@
+/* desktop */
+@media only screen and (min-width: 500px) {
+
+	header h1{
+
+		font-size: 4vw;
+		
+		padding: 30px;
+		display: inline-block;
+		vertical-align: middle; 
+
+	}
+
+	nav {
+
+		margin: auto;
+
+	}
+
+	nav li {
+
+		display: inline-block;
+		font-size: 1.7vw;
+		width: 19%;
+
+	}
+
+	nav li a {
+
+		border-width: 2px 0px 4px 2px; 
+
+
+	}
+
+	#logo {
+
+		width: 8vw;
+		height: 8vw;
+
+	}
+
+	#menuIcon {
+
+		display: none;
+
+	}
+
+	nav li:last-child {
+
+		border-right: 3px solid black;
+
+	}
+
+	article {
+
+		width: 85vw;
+		margin: 0 auto;
+
+	}
+
+	.featured {
+
+		float: right;
+		width: 24%;
+
+	}
+
+
+	.general {
+
+		float: left;
+		width: 75%; 
+		margin: 0 auto;
+
+	}
+
+	.book {
+
+	float: left;
+	padding: 0px;
+
+	}
+
+	.book .thumbnail {
+
+		float: left;
+		height: 200px;
+		padding-right: 10px;
+
+
+	}
+
+	.book .thumbnail-image {
+		width: 140px;
+		padding-top: 10px;
+	}
+
+	.general .book {
+
+		width: 271px;
+		height: 210px;
+		margin: 0px 15px 10px 0px;
+		padding: 5px;
+
+	}
+
+	.featured .book {
+
+		width: 170px;
+		height: 370px;
+		padding: 10px 6px 6px 6px;
+		margin: 7px;
+
+
+	}
+
+	.featured .thumbnail-image {
+
+		position: absolute;
+		padding-top: 170px;
+		padding-left: 14px;
+
+
+	}
+
+	.title {
+
+		font-size: 9pt;
+
+	}
+
+	.pageCount {
+
+		font-weight: bold;
+
+	}
+
+	.description, .authors, .pageCount {
+
+		font-size: 8pt;
+
+	}
+
+	footer {
+
+		position: absolute;
+		width: 160px;
+		top:10px;
+		left: 50%;
+		padding-left: 190px;
+
+	}
+
+
+}
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+
+	footer {
+
+		text-align: center;
+
+	}
+
+
+	.featured {
+
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.featured div {
+
+		margin: 20px;
+
+	}
+
+	.thumbnail-image {
+
+		width: 200px;
+
+	}
+
+	.general .book {
+
+		margin-bottom: 20px;
+
+	}
+
+	.general .book {
+
+		height: 360px;
+
+	}
+
+	.general .book div {
+
+		padding: 10px;
+
+	}
+
+	.general .thumbnail {
+
+		float: left;
+
+	}
+
+	nav ul {
+
+		display: none;
+
+	}
+
+	header h1 {
+
+		font-size: 30pt;
+		padding: 0px;
+		margin: 10px;
+
+	}
+
+	nav li a {
+
+		border-width: 2px 2px 0px 2px; 
+
+	}
+
+	nav li {
+
+		font-size: 18px;
+
+	}
+
+	nav li:last-child {
+
+		border-bottom: 2px solid black;
+
+	}
+
+	#logo {
+
+		display: none;
+
+	}
+
+	.book {
+
+		font-size: 18px;
+
+	}
+
+	.title {
+
+		font-size: 20px;
+
+	}
+
+	.authors {
+
+		font-size: 16px;
+
+	}
+
+}
+
 body {
 
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -8,24 +274,6 @@ body {
 header {
 
 	text-align: center;
-
-}
-
-.desktop header h1{
-
-	font-size: 30pt;
-	
-	padding: 30px;
-	display: inline-block;
-	vertical-align: middle; 
-
-}
-
-.mobile header h1 {
-
-	font-size: 30pt;
-	padding: 0px;
-	margin: 10px;
 
 }
 
@@ -54,7 +302,6 @@ nav ul {
 nav li{
 
 	list-style: none;	
-	font-size: 15pt;
 	margin: 0px;
 	padding: 0px;
 
@@ -110,228 +357,6 @@ nav li a:hover {
 	background: white;
 	border: 2px solid black;
 	cursor: pointer;
-
-}
-
-.mobile nav li a {
-
-	border-width: 2px 2px 0px 2px; 
-
-}
-.mobile nav li:last-child {
-
-	border-bottom: 2px solid black;
-
-}
-
-.mobile #logo {
-
-	display: none;
-
-}
-
-.desktop nav {
-
-	margin: auto;
-
-}
-
-.desktop nav li {
-
-	display: inline-block;
-
-}
-
-.desktop nav li a {
-
-	width: 100px;
-	border-width: 2px 0px 4px 2px; 
-
-
-}
-
-.desktop #menuIcon {
-
-	display: none;
-
-}
-
-.desktop nav li:last-child {
-
-	border-right: 3px solid black;
-
-}
-
-.desktop article {
-
-	width: 806px;
-	margin: 0 auto;
-
-}
-
-.desktop .featured {
-
-	float: right;
-	width: 200px;
-
-}
-
-
-.desktop .general {
-
-	float: left;
-	width: 600px; 
-	margin: 0 auto;
-
-}
-
-.mobile .book {
-
-	font-size: 18px;
-
-}
-
-.mobile .title {
-
-	font-size: 20px;
-
-}
-
-.mobile .authors {
-
-	font-size: 16px;
-
-}
-
-.desktop .book {
-
-	float: left;
-	padding: 0px;
-
-}
-
-.desktop .book .thumbnail {
-
-	float: left;
-	height: 200px;
-	padding-right: 10px;
-
-
-}
-
-.desktop .book .thumbnail-image {
-	width: 140px;
-	padding-top: 10px;
-}
-
-.desktop .general .book {
-
-	width: 271px;
-	height: 210px;
-	margin: 0px 15px 10px 0px;
-	padding: 5px;
-
-}
-
-.desktop .featured .book {
-
-	width: 170px;
-	height: 370px;
-	padding: 10px 6px 6px 6px;
-	margin: 7px;
-
-
-}
-
-.desktop .featured .thumbnail-image {
-
-	position: absolute;
-	padding-top: 170px;
-	padding-left: 14px;
-
-
-}
-
-.desktop .title {
-
-	font-size: 9pt;
-
-}
-
-.desktop .pageCount {
-
-	font-weight: bold;
-
-}
-
-.desktop .description, .desktop .authors, .desktop .pageCount {
-
-	font-size: 8pt;
-
-}
-
-.desktop footer {
-
-	position: absolute;
-	width: 160px;
-	top:10px;
-	left: 50%;
-	padding-left: 190px;
-
-}
-
-.mobile footer {
-
-	text-align: center;
-
-}
-
-
-.mobile .featured {
-
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-.mobile .featured div {
-
-	margin: 20px;
-
-}
-
-.mobile .thumbnail-image {
-
-	width: 200px;
-
-}
-
-.mobile .general .book {
-
-	margin-bottom: 20px;
-
-}
-
-.mobile .general .book {
-
-	height: 300px;
-
-}
-
-.mobile .general .book div {
-
-	padding: 10px;
-
-}
-
-.mobile .general .thumbnail {
-
-	float: left;
-
-}
-
-.mobile nav ul {
-
-	display: none;
 
 }
 
