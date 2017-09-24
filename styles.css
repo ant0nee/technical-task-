@@ -145,6 +145,12 @@
 
 	}
 
+	.book_checkbox {
+
+		float: right;
+
+	}
+
 	footer {
 
 		position: absolute;
@@ -377,7 +383,6 @@ nav li a:hover {
 
 	background: white;
 	border: 2px solid black;
-	cursor: pointer;
 
 }
 

@@ -5,7 +5,11 @@ function addBooks(books, containerId) {
 	for (var book = 0; book < books.length; book++) {
        		var volumeInfo = books[book].volumeInfo;
        		var id = books[book].id; 
-       		var title = volumeInfo.title+" "+volumeInfo.subtitle;
+       		if (volumeInfo.subtitle == undefined) {
+       			var title = volumeInfo.title;
+       		} else {
+       			var title = volumeInfo.title+" "+volumeInfo.subtitle;
+       		}
 			var thumbnail = volumeInfo.imageLinks.thumbnail;
 			var authors = volumeInfo.authors.join(", ");
 			var pageCount = volumeInfo.pageCount;
@@ -17,7 +21,8 @@ function addBooks(books, containerId) {
 
 			}
 
-			document.getElementById(containerId).innerHTML += "<div class=\"book\" id=\""+id+"\" onclick=\"select(this)\" title=\""+description+"\">"+
+			document.getElementById(containerId).innerHTML += "<div class=\"book\" id="+id+" title=\""+description+"\">"+
+			"<input type=\"checkbox\" class=\"book_checkbox "+id+"\" onClick=\"selectBook('"+id+"')\">"+
 			"<div class=\"thumbnail\"><img class=\"thumbnail-image\" src=\""+thumbnail+"\" alt=\"book cover\" /></div>"+
 			"<div class=\"info\">"+
 			"<p class=\"title\">"+title+"</p>"+
@@ -31,9 +36,7 @@ function addBooks(books, containerId) {
 
 }
 
-function loaded() {
-
-	toggleMenu();
+function getRememberedStates() {
 
 	if (localStorage.getItem("selected")){
 
@@ -45,11 +48,19 @@ function loaded() {
 
 		if (document.getElementById(highlighted[i])) {
 
+			console.log(highlighted[i]);
 			document.getElementById(highlighted[i]).className += " is-selected";
+			document.getElementsByClassName(highlighted[i])[0].checked=true;
 
 		}
 
 	}
+
+}
+
+function loaded() {
+
+	toggleMenu();
 
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
@@ -60,6 +71,7 @@ function loaded() {
 	       var not_featured = books.slice(0, -2); 
 	       addBooks(featured, "featured");
 	       addBooks(not_featured, "not_featured");
+	       getRememberedStates();
 	       
 	    }
 	};
@@ -78,17 +90,18 @@ function toggleMenu() {
 
 }
 
-function select(object) {
+function selectBook(id) {
 
-	if (new RegExp("^.*\\sis\\-selected$").test(object.className)) {
+	var book = document.getElementById(id);
+	if (new RegExp("^.*\\sis\\-selected$").test(book.className)) {
 
-		object.className = object.className.replace(" is-selected","");
-		highlighted.splice(highlighted.indexOf(object.id),1);
+		book.className = book.className.replace(" is-selected","");
+		highlighted.splice(highlighted.indexOf(book.id),1);
 
 	} else {
 
-		object.className += " is-selected";
-		highlighted.push(object.id);
+		book.className += " is-selected";
+		highlighted.push(book.id);
 
 	}
 
