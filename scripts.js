@@ -23,13 +23,13 @@ function addBooks(books, containerId) {
 
 			document.getElementById(containerId).innerHTML += "<div class=\"book\" id="+id+" title=\""+description+"\">"+
 			"<input type=\"checkbox\" class=\"book_checkbox "+id+"\" onClick=\"selectBook('"+id+"')\">"+
-			"<div class=\"thumbnail\"><img class=\"thumbnail-image\" src=\""+thumbnail+"\" alt=\"book cover\" /></div>"+
+			"<div class=\"book-content\"><div class=\"thumbnail\"><img class=\"thumbnail-image\" src=\""+thumbnail+"\" alt=\"book cover\" /></div>"+
 			"<div class=\"info\">"+
 			"<p class=\"title\">"+title+"</p>"+
 			"<p class=\"authors\">"+authors+"</p>"+
 			"<p class=\"pageCount\">pages: "+pageCount+"</p>"+
 			"<p class=\"description\">"+shortDesc+"</p>"+
-			"</div>"+
+			"</div></div>"+
 			"</div>";
 
        }

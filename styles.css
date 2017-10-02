@@ -71,6 +71,29 @@
 
 	}
 
+	.general .book .thumbnail {
+
+		float: left;
+		padding: 0.5vw;
+
+	}
+
+	.featured .book .thumbnail {
+
+		padding-left:1vw;
+		padding-top: 5px;
+
+	}
+
+	.featured .book .book-content {
+
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column-reverse;
+    	flex-direction: column-reverse;
+
+	}
+
 
 	.general {
 
@@ -87,14 +110,6 @@
 
 	}
 
-	.book .thumbnail {
-
-		float: left;
-		padding-right: 10px;
-
-
-	}
-
 	.book .thumbnail-image {
 		width: 12vw;
 	}
@@ -108,21 +123,18 @@
 
 	}
 
-	.featured .book {
+	#featured {
 
+		margin: 0 auto;
+		display: block;
 		width: 80%;
-		height: 40vw;
-		padding: 10px 5px 0px 5px;
-		margin: 0 0 10px 7%;
-
 
 	}
+	.featured .book {
 
-	.featured .thumbnail-image {
-
-		position: absolute;
-		padding-top: 20vw;
-		padding-left: 14px;
+		height: 45vw;
+		padding: 10px 5px 0px 5px;
+		margin-bottom: 10px;
 
 
 	}
@@ -206,7 +218,7 @@
 
 	.thumbnail-image {
 
-		width: 200px;
+		width: 150px;
 
 	}
 
@@ -225,12 +237,6 @@
 	.general .book div {
 
 		padding: 10px;
-
-	}
-
-	.general .thumbnail {
-
-		float: left;
 
 	}
 
@@ -395,5 +401,11 @@ nav li a:hover {
 .is-selected {
 
 	background: #aff;
+
+}
+
+.general .thumbnail {
+
+	float: left;
 
 }
